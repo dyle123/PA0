@@ -1,10 +1,10 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
     background-color: #fffcf6;
     margin: 0;
     padding: 0;
     justify-content: center;
+    font-family: 'Mulish', sans-serif;
 }
 
 header {

@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 header {
@@ -401,50 +401,45 @@ footer .dong1 {
 }
 
 
-.Article {
-  flex-direction: column; /* Stack the boxes vertically */
-  align-items: flex-start; /* Align the boxes to the left */
-  margin-top: 10px;
-  margin-left: 50px;
-  position: relative;
-  padding-top: 10px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Chia đều thành 4 cột */
-  grid-auto-rows: 200px; /* Chiều cao mỗi hàng */
-  gap: 20px; /* Khoảng cách giữa các box */
-  margin: 0 auto; /* Căn giữa container */
-  width: 100%; /* Chiếm toàn bộ chiều rộng có sẵn */
-  max-width: 1200px; /* Giới hạn chiều rộng để tránh tràn ra ngoài */
-  padding-left: 50px; /* Đảm bảo có khoảng cách bên trái */
-  padding-right: 20px; /* Đảm bảo có khoảng cách bên phải */
+.article-box {
+  display: flex;
+  margin-bottom: 20px;
+  height: 100px; /* Adjust the height according to your preference */
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  height: 200px;
+  width: 700px; /* Box sẽ tự động điều chỉnh kích thước theo cột */
   box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
 }
 
-.MOST-LIKED-ON-FLYHIGH .small-box .image-gallery {
-  margin-top: 0px;
-  width: 230px;
-  height:190px; 
-  overflow: hidden; /* Hide overflow if image exceeds box */
-  
-}
-
-.Article .small-box {
-  margin-bottom: 10px; /* Add some space between the boxes */
-  width: 500px; /* Set the width of each box */
-  height: 150px; /* Set the height of each box */
-}
-
-/* Optional: Adjust spacing at the bottom of the last box */
-.Article .small-box:last-child {
-  margin-bottom: 0;
-}
-.Index {
+.article-left {
+  flex: 0 0 30%; /* 30% of the container width */
   display: flex;
-  flex-direction: row ; /* Stack the boxes vertically */
-  align-items: flex-start; /* Align the boxes to the left */
-  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
-.Index .small-box{
-  margin: 5px;
+.article-right {
+  flex: 1; /* 70% of the container width */
+  padding: 10px;
+}
+
+.article-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.article-text {
+  margin-bottom: 10px;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: gray;
 }

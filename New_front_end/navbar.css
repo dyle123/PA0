@@ -8,6 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     border: none; /* Ensure no border at the bottom */
+    font-family: 'Mulish', sans-serif;
   }
   .logo img {
     width: 80px;

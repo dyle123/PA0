@@ -1,54 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const boxContainer = document.getElementById('box-article');
-    const boxes = [
+    const articleContainer = document.getElementById('article-container');
+
+    const articles = [
         {
-            image: 'Image/hot_search_1.jpg',
-            title: 'Title of the Post 1',
-            text: 'This is a brief description of the content 1.',
-            username: 'User123',
-            reactions: '123 Reactions'
+            image: 'Image/article_1.jpg',
+            title: 'Article Title 1',
+            text: 'This is a brief description of the article content 1.',
+            username: 'Author123',
+            reactions: '100 Reactions'
         },
         {
-            image: 'Image/hot_search_2.jpg',
-            title: 'Title of the Post 2',
-            text: 'This is a brief description of the content 2.',
-            username: 'User456',
-            reactions: '456 Reactions'
+            image: 'Image/article_2.jpg',
+            title: 'Article Title 2',
+            text: 'This is a brief description of the article content 2.',
+            username: 'Author456',
+            reactions: '200 Reactions'
         },
-        {
-            image: 'Image/hot_search_3.jpg',
-            title: 'Title of the Post 2',
-            text: 'This is a brief description of the content 2.',
-            username: 'User456',
-            reactions: '456 Reactions'
-        },
-        {
-            image: 'Image/hot_search_4.jpg',
-            title: 'Title of the Post 2',
-            text: 'This is a brief description of the content 2.',
-            username: 'User456',
-            reactions: '456 Reactions'
-        },
+        // Add more articles here
     ];
 
-    boxes.forEach(box => {
-        const boxElement = document.createElement('div');
-        boxElement.className = 'small-box';
-        
-        boxElement.innerHTML = `
-            <div class="image-gallery">
-                <img src="${box.image}" alt="Image" style="width:100%;">
+    articles.forEach(article => {
+        const articleElement = document.createElement('div');
+        articleElement.className = 'article-box';
+
+        articleElement.innerHTML = `
+            <div class="article-left">
+                <img src="${article.image}" alt="Article Image" style="width:100%; height:100%;">
             </div>
-            <div class="box-title">${box.title}</div>
-            <div class="box-text">${box.text}</div>
-            <div class="box-footer">
-                <span class="username">Posted by ${box.username}</span>
-                <span class="reactions">${box.reactions}</span>
+            <div class="article-right">
+                <div class="article-title">${article.title}</div>
+                <div class="article-text">${article.text}</div>
+                <div class="article-footer">
+                    <span class="username">Posted by ${article.username}</span>
+                    <span class="reactions">${article.reactions}</span>
+                </div>
             </div>
         `;
-        
-        boxContainer.appendChild(boxElement);
+
+        articleContainer.appendChild(articleElement);
     });
 });
-
-
