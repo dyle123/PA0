@@ -1,0 +1,148 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffcf6;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+header {
+    background-color: #fdf5e6;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    font-family: 'Helvetica', sans-serif;;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+nav button, .profile-btn {
+    padding: 5px 10px;
+    background-color: #f4c842;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+.container {
+    width: calc(100% - 40px); 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+.suggestion {
+    width: calc(100% - 40px); 
+    max-width: 1200px; 
+    height: 520px;
+    background-color: #ecddcb;
+    padding: 0px;
+    margin: 0 auto 60px auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+.suggestion img {
+    width: 100%;
+    height: 100%;
+    max-height: 80%;
+    object-fit: cover; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.caption h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.caption p {
+    background-color: #FFC125;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+footer {
+    position: relative; /* Thay đổi từ absolute thành relative */
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Màu nền của footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .dong {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  footer .box1 {
+    margin: 10px;
+  }
+  
+  footer .box1 ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer .box1 ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer .dong1 {
+    margin-top: 20px;
+  }
+  

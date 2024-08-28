@@ -1,0 +1,149 @@
+header {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    background: #F2EBBF;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none; /* Ensure no border at the bottom */
+  }
+  .logo img {
+    width: 80px;
+    height: auto;
+  }
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu, .conlai {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-left: 100px;
+    position: relative;
+  }
+  .menu li .hidden-button {
+    display: none; /* Ẩn button mặc định */
+    position: absolute;
+    top: 50%; /* Đặt button ở giữa phần tử li */
+    left: 100%; /* Đặt button ra ngoài bên phải của phần tử li */
+    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    background-color: #f1d18b; /* Màu nền của button */
+    color: white; /* Màu chữ */
+    border: none; /* Loại bỏ đường viền */
+    border-radius: 5px; /* Bo tròn các góc của button */
+    padding: 5px 10px; /* Khoảng đệm cho button */
+    cursor: pointer; /* Hiển thị con trỏ khi hover vào button */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+  }
+  
+  .menu li:hover .hidden-button {
+    display: block; /* Hiển thị button khi hover vào li */
+  }
+  .menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(113, 107, 107);
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .menu li a:hover {
+    color: black;
+  }
+  
+  .menu1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(rgba(69, 77, 230, 0.385), transparent);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0px 8px 16px rgba(0,0,0, 0.3);
+  }
+  
+  
+  .menu1 li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu1 li a {
+    padding: 10px 20px;
+    display: block;
+    color: rgb(112, 106, 107);
+    text-decoration: none;
+    transition: color 0.3s;
+    border-radius: 20px;
+  }
+  
+  .menu1 li a:hover {
+    border-radius: 20px;
+    background-color: #fefefe;
+    color: black;
+  }
+  
+  .menu li:hover .menu1 {
+    display: block;
+  }
+  
+  .conlai li{
+    margin-right: 15px;
+  }
+  
+  .menu li a, .conlai li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(113, 107, 107);
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .menu li a:hover, .conlai li a:hover {
+    color: black;
+  }
+  
+  .conlai input[type="text"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .conlai input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .conlai i {
+    margin-left: -30px;
+    color: #aaa;
+  }
+  
+  .conlai select {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  .conlai select:focus {
+    border-color: #007bff;
+    outline: none;
+  }

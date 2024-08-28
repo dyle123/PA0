@@ -1,0 +1,84 @@
+/* Basic reset for body to remove default margins */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #F7EFDE;
+    /* Main theme color */
+}
+
+/* Container for all sections */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Styling for each section */
+.general-info,
+.review-posts,
+.reported-comments,
+.banned-accounts {
+    margin-top: 20px;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+/* Headers within sections */
+h2 {
+    color: #333;
+}
+
+/* General, post, comment, and account styling */
+.post,
+.comment,
+.account {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Review Posts specific styling */
+.review-posts .post {
+    display: flex;
+    align-items: center;
+}
+
+.review-posts .post-image {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.review-posts .post-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-posts .button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Button styling */
+button {
+    padding: 5px 10px;
+    color: white;
+    background-color: #f4d7bd;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e5a263;
+}

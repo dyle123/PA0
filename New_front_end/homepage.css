@@ -1,0 +1,450 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  background: #F2EBBF;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border: none; /* Ensure no border at the bottom */
+}
+.logo img {
+  width: 80px;
+  height: auto;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu, .conlai {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 100px;
+  position: relative;
+}
+.menu li .hidden-button {
+  display: none; /* Ẩn button mặc định */
+  position: absolute;
+  top: 50%; /* Đặt button ở giữa phần tử li */
+  left: 100%; /* Đặt button ra ngoài bên phải của phần tử li */
+  transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+  background-color: #f1d18b; /* Màu nền của button */
+  color: white; /* Màu chữ */
+  border: none; /* Loại bỏ đường viền */
+  border-radius: 5px; /* Bo tròn các góc của button */
+  padding: 5px 10px; /* Khoảng đệm cho button */
+  cursor: pointer; /* Hiển thị con trỏ khi hover vào button */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+}
+
+.menu li:hover .hidden-button {
+  display: block; /* Hiển thị button khi hover vào li */
+}
+.menu li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(113, 107, 107);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: black;
+}
+
+.menu1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(rgba(69, 77, 230, 0.385), transparent);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  box-shadow: 0px 8px 16px rgba(0,0,0, 0.3);
+}
+
+
+.menu1 li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu1 li a {
+  padding: 10px 20px;
+  display: block;
+  color: rgb(112, 106, 107);
+  text-decoration: none;
+  transition: color 0.3s;
+  border-radius: 20px;
+}
+
+.menu1 li a:hover {
+  border-radius: 20px;
+  background-color: #fefefe;
+  color: black;
+}
+
+.menu li:hover .menu1 {
+  display: block;
+}
+
+.conlai li{
+  margin-right: 15px;
+}
+
+.menu li a, .conlai li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(113, 107, 107);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu li a:hover, .conlai li a:hover {
+  color: black;
+}
+
+.conlai input[type="text"] {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.conlai input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.conlai i {
+  margin-left: -30px;
+  color: #aaa;
+}
+
+.conlai select {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+.conlai select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+
+/* Container for the right sidebar */
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 28%; /* Adjust as needed */
+  margin-left: auto; /* Align to the right */
+  padding: 20px;
+}
+
+/* Categories container styling */
+.categories {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9; /* Light background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+  margin-bottom: 20px; /* Space below */
+}
+
+/* Individual category items styling */
+.category-item {
+  display: block;
+  width: calc(100% - 20px); /* Full width minus padding for the container */
+  padding: 10px;
+  margin: 5px auto; /* Centered and with space around */
+  background-color: #ccc;
+  color: #000;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-item:hover {
+  background-color: #aaa; /* Darker shade on hover */
+}
+
+
+.home-product-item {
+  flex: 1;
+  margin-bottom: 12px;
+}
+.home-product-item_img {
+  width: 100%;
+  height: 200px; 
+  background-size: cover;
+  background-position: center;
+}
+
+.home-product-item_name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--white-color);
+  line-height: 1.8rem;
+  background: #F6F5F5;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: block;
+} 
+.home-product-item_contact{
+  color: var(--black-color);
+  font-size: 15px;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column; 
+}
+.grid__full-width{
+  width: 20%;
+  max-width: 20%;
+  margin:0;
+
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end; 
+  justify-content: center;
+}
+
+.grid_column-2 {
+  justify-content: center;
+  margin-bottom: 20px;
+  
+}
+
+/* Container holding both sidebars */
+.container {
+  display: flex;
+  justify-content: space-between; /* Space between the sidebars */
+  align-items: flex-start; /* Đảm bảo 2 side bắt đầu từ cùng một độ cao */
+  width: 100%;
+  justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+}
+
+.left-sidebar {
+  display: flex; /* Sử dụng Flexbox */
+  flex-direction: column; /* Đặt hướng các phần tử con theo cột */
+  align-items: center; /* Căn giữa các phần tử con theo chiều ngang */
+  width: 75% ;/* Điều chỉnh độ rộng theo nhu cầu */
+  padding: 10px;
+  background-color:#F6EEDC; /* Màu nền của sidebar trái */
+}
+
+.right-sidebar {
+  width: 20%; /* Adjust as needed */
+  padding: 10px;
+  background-color: #F6EEDC; /* Optional: Add background color */
+  
+}
+
+/* Additional styling */
+.left-sidebar img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+
+.left-sidebar .post-button {
+  display: block; /* Đảm bảo button có thể được hiển thị đúng cách */
+  width: 50%; /* Button sẽ rộng bằng 50% của phần tử chứa */
+  padding: 10px; /* Thêm khoảng đệm cho button */
+  margin-top: 10px; /* Khoảng cách từ hình ảnh đến button */
+  background-color:#B6B5B3; /* Màu nền của button */
+  color: black; /* Màu chữ */
+  border: none; /* Loại bỏ đường viền */
+  border-radius: 20px; /* Bo tròn các góc của button */
+  cursor: pointer; /* Hiển thị con trỏ khi hover vào button */
+  text-align: center; /* Căn giữa chữ trong button */
+  font-size: 16px; /* Cỡ chữ */
+
+}
+
+.left-sidebar .post-button:hover {
+  background-color: #FAB31B; /* Màu nền khi hover */
+}
+
+
+footer {
+  position: relative; /* Thay đổi từ absolute thành relative */
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Màu nền của footer */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+footer .dong {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .box1 {
+  margin: 10px;
+}
+
+footer .box1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .box1 ul li {
+  margin-bottom: 10px;
+}
+
+footer .dong1 {
+  margin-top: 20px;
+}
+.MOST-LIKED-ON-FLYHIGH {
+  position: relative;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia đều thành 4 cột */
+  grid-auto-rows: 350px; /* Chiều cao mỗi hàng */
+  gap: 20px; /* Khoảng cách giữa các box */
+  justify-content: center; /* Căn giữa toàn bộ lưới */
+  margin: 0 auto; /* Căn giữa container */
+  width: 100%; /* Chiếm toàn bộ chiều rộng có sẵn */
+  max-width: 1200px; /* Giới hạn chiều rộng để tránh tràn ra ngoài */
+  padding-left: 50px; /* Đảm bảo có khoảng cách bên trái */
+  padding-right: 20px; /* Đảm bảo có khoảng cách bên phải */
+  box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+}
+
+.MOST-LIKED-ON-FLYHIGH .small-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  height: 320px;
+  width: 100%; /* Box sẽ tự động điều chỉnh kích thước theo cột */
+  box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+}
+
+.MOST-LIKED-ON-FLYHIGH .small-box .image-gallery {
+  margin-top: 0px;
+  width: 230px;
+  height:190px; 
+  overflow: hidden; /* Hide overflow if image exceeds box */
+  
+}
+
+.MOST-LIKED-ON-FLYHIGH .small-box .box-title {
+  font: Mulish;
+  font-weight: bold;
+  margin: 2px 0;
+  justify-content: left;
+}
+
+.MOST-LIKED-ON-FLYHIGH .small-box .box-text {
+  flex-grow: 1; /* Take up remaining space */
+  margin-bottom: 5px;
+}
+
+.MOST-LIKED-ON-FLYHIGH .small-box .box-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #555;
+}
+
+
+.Article {
+  flex-direction: column; /* Stack the boxes vertically */
+  align-items: flex-start; /* Align the boxes to the left */
+  margin-top: 10px;
+  margin-left: 50px;
+  position: relative;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Chia đều thành 4 cột */
+  grid-auto-rows: 200px; /* Chiều cao mỗi hàng */
+  gap: 20px; /* Khoảng cách giữa các box */
+  margin: 0 auto; /* Căn giữa container */
+  width: 100%; /* Chiếm toàn bộ chiều rộng có sẵn */
+  max-width: 1200px; /* Giới hạn chiều rộng để tránh tràn ra ngoài */
+  padding-left: 50px; /* Đảm bảo có khoảng cách bên trái */
+  padding-right: 20px; /* Đảm bảo có khoảng cách bên phải */
+  box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+}
+
+.MOST-LIKED-ON-FLYHIGH .small-box .image-gallery {
+  margin-top: 0px;
+  width: 230px;
+  height:190px; 
+  overflow: hidden; /* Hide overflow if image exceeds box */
+  
+}
+
+.Article .small-box {
+  margin-bottom: 10px; /* Add some space between the boxes */
+  width: 500px; /* Set the width of each box */
+  height: 150px; /* Set the height of each box */
+}
+
+/* Optional: Adjust spacing at the bottom of the last box */
+.Article .small-box:last-child {
+  margin-bottom: 0;
+}
+.Index {
+  display: flex;
+  flex-direction: row ; /* Stack the boxes vertically */
+  align-items: flex-start; /* Align the boxes to the left */
+  margin: 20px;
+}
+
+.Index .small-box{
+  margin: 5px;
+}

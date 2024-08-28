@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Page</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        // JavaScript to load the navbar
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading navbar:', error));
+      </script>
+    <div class="container">
+        <!-- General Information Section -->
+        <div class="general-info">
+            <h2>Homepage >> User Information</h2>
+            <h2>General Information</h2>
+            <p><strong>Username:</strong> HoAnhNguyen</p>
+            <p><strong>Account type:</strong> Admin</p>
+        </div>
+
+        <!-- Review Posts Section -->
+        <div class="review-posts">
+            <h2>Review Posts</h2>
+            <div class="post">
+                <img src="Image/banhtrang.jpg" alt="Sample Food" class="post-image">
+                <div class="post-content">
+                    <p class="post-title"><strong>Title:</strong> Bánh tráng nướng Đà Lạt - Món ăn ngon khó cưỡng nhất
+                        định phải thử khi đến xứ sở sương mù</p>
+                    <p><strong>Category:</strong> Food and Cuisines</p>
+                    <div class="button-container">
+                        <button>Upload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reported Comments Section -->
+        <div class="reported-comments">
+            <h2>Reported Comments</h2>
+            <div class="comment">
+                <p class="comment-text">"Thức ra buổi tối Huế khá buồn, mình có đi mã 9h tối hàng quán, mọi người đã
+                    đóng cửa gần hết. Còn dậu về mọi thứ thì ko có gì phải phàn nàn, từ con người tới cuộc sống đều mang
+                    một vẻ bình yên, nhẹ nhàng mà bất kì ai cũng có thể cảm nhận đc khi lần đầu tiên đặt chân tới đây"
+                    By User1</p>
+                <p class="article-source"><strong>From Quán thế dị tich Cổ độ Huế - Di sản văn hóa thế giới đầu tiên của
+                        Việt Nam</strong></p>
+                <div class="button-container">
+                    <button>Skip</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banned Accounts Section -->
+        <div class="banned-accounts">
+            <h2>Banned Accounts</h2>
+            <div class="account">
+                <p><strong>Username:</strong> BannedUser1</p>
+                <button>Unban</button>
+            </div>
+            <div class="account">
+                <p><strong>Username:</strong> BannedUser2</p>
+                <button>Unban</button>
+            </div>
+            <div class="account">
+                <p><strong>Username:</strong> BannedUser3</p>
+                <button>Unban</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fly High</title>
+    <link rel="stylesheet" href="Ads.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="container">
+        <!-- Main content for Privacy Policy -->
+        <div class="main">
+            <h1>Chính Sách Bảo Mật</h1>
+            
+            <p>Chúng tôi coi trọng quyền riêng tư của bạn và cam kết bảo vệ thông tin cá nhân của bạn. Dưới đây là chính sách bảo mật chi tiết của chúng tôi.</p>
+
+            <h2>Thông tin chúng tôi thu thập</h2>
+            <p>Khi bạn truy cập vào trang web của chúng tôi, chúng tôi có thể thu thập thông tin cá nhân mà bạn cung cấp tự nguyện, bao gồm tên, địa chỉ email, và thông tin liên lạc khác.</p>
+
+            <h2>Cách chúng tôi sử dụng thông tin của bạn</h2>
+            <p>Chúng tôi sử dụng thông tin thu thập được để cung cấp dịch vụ, hỗ trợ khách hàng, cải thiện trang web và giao tiếp với bạn về các bản cập nhật, khuyến mãi, và các dịch vụ khác mà bạn có thể quan tâm.</p>
+
+            <h2>Chia sẻ thông tin với bên thứ ba</h2>
+            <p>Chúng tôi không bán, trao đổi, hoặc cho thuê thông tin cá nhân của bạn cho bên thứ ba. Chúng tôi chỉ chia sẻ thông tin của bạn khi cần thiết để tuân thủ pháp luật hoặc để bảo vệ quyền lợi của chúng tôi.</p>
+
+            <h2>Bảo mật thông tin</h2>
+            <p>Chúng tôi sử dụng các biện pháp bảo mật hợp lý để bảo vệ thông tin cá nhân của bạn khỏi truy cập trái phép, thay đổi, hoặc tiết lộ.</p>
+
+            <h2>Thay đổi chính sách bảo mật</h2>
+            <p>Chúng tôi có thể cập nhật chính sách bảo mật này theo thời gian. Mọi thay đổi sẽ được đăng tải trên trang này và có hiệu lực ngay khi đăng tải.</p>
+
+            <h2>Liên hệ</h2>
+            <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách bảo mật của chúng tôi, vui lòng liên hệ với chúng tôi qua email: flyhigh@gmail.com.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="dong">
+            <div class="Box">
+                <div class="box1">
+                    <ul>Thông tin liên hệ
+                        <li class="thongtin">Công ty Fly High</li>
+                        <li class="thongtin">Địa chỉ: 123 ABC, Phường 69, Quận XYZ, TPHCM</li>
+                        <li class="thongtin">Email:flyhigh@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="box1">
+                    <ul>Chính sách dịch vụ
+                        <li class="thongtin"><a href="Qdsd.html">Quy định sử dụng</a></li>
+                        <li class="thongtin"><a href="Csbm.html">Chính sách bảo mật</a></li>
+                    </ul> 
+                </div>   
+                <div class="box1">
+                    <ul>Hỗ trợ
+                        <li class="thongtin">Phản hồi, góp ý: 0134789611</li>
+                        <li class="thongtin">Tel:(028) 6969 1111</li>
+                        <li class="thongtin">Fax:(028) 1234 7689</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dong1">
+            © 2024 Fly High. All Rights Reserved. 
+        </div>
+    </footer>
+    <script>
+        // JavaScript to load the navbar
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-container').innerHTML = data;
+          })
+          .catch(error => console.error('Error loading navbar:', error));
+      </script>
+</body>
+</html>

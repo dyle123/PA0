@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="icon" href="Image/fly.png" type="icon" />
+
+    <title>FlyHigh Review and Experiance</title>
+    <meta name="description" content="A basic HTML tutorial" />
+    <meta name="keywords" content="HTML, code, tags" />
+    <meta name="author" content="Dann Albright" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+  <div id="navbar-container"></div>
+  
+  <div class="container">
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+      <img src="Image/first_page.png" alt="Description of image" style="width:100%;">
+      <a href="your-target-page.html" class="post-button">Wanna share? Start writing now!</a>
+      <div class="MOST-LIKED-ON-FLYHIGH">
+        <div id="box-container" class="MOST-LIKED-ON-FLYHIGH"></div>
+    </div>
+    <script src="hot.js"></script>
+      <img src="Image/banner_dalat.jpg" alt="Banner" style="width:100%;">
+      <div class="Article">
+        <div id="box-article" class="Banner"></div>
+      </div>
+      <script src="article.js"></script>
+      
+      <div class="Index">
+        <a href="your-target-page.html" class="small-box">1</a>
+        <a href="your-target-page.html" class="small-box">2</a>
+        <a href="your-target-page.html" class="small-box">3</a>
+      </div>
+    </div>
+  
+    <div class="right-sidebar">
+      <div class="grid">
+        <div class="categories">
+          <h3>Categories</h3>
+          <div class="category-list">
+            <span class="category-item">Food & Cuisines</span>
+            <span class="category-item">Shopping</span>
+            <span class="category-item">Scenery and Natural Attractions</span>
+            <span class="category-item">Romantic Getaways</span>
+            <span class="category-item">Local Insights</span>
+            <span class="category-item">Entertainment and Activities</span>
+            <span class="category-item">Budget Travel</span>
+            <span class="category-item">Luxury Travel</span>
+            <span class="category-item">Family and Kid-friendly activities</span>
+            <span class="category-item">Cultural Experiences</span>
+            <span class="category-item">Accommodations</span>
+          </div>
+        </div>
+        <div class="grid_row app_content">
+          <div class="grid_column-10">
+            <div class="home-filter"></div>
+            <div class="home-product">
+              <div class="grid__row">
+                <div class="grid_column-2">
+                  <div class="home-product-item">
+                    <div class="home-product-item_img" style="background-image: url(https://cdn3.ivivu.com/2022/09/T%E1%BB%95ng-quan-du-l%E1%BB%8Bch-V%C5%A9ng-T%C3%A0u-ivivu-1024x559.jpg);"></div>
+                    <h4 class="home-product-item_name">
+                      Tour Vũng Tàu 2N1Đ x.000.000-x.200.000đ
+                      Contact: 0123456789
+                    </h4>
+                  </div>  
+                </div>
+                <div class="grid_column-2">
+                  <div class="home-product-item">
+                    <div class="home-product-item_img" style="background-image: url(https://statics.vinpearl.com/du-lich-vinh-Ha-Long-hinh-anh3_1625912082_1661247765.jpg);"></div>
+                    <h4 class="home-product-item_name">
+                      Tour Hạ Long 3N2Đ x.000.000-x.200.000đ
+                      Contact: 0123456789
+                    </h4>
+                  </div>  
+                </div>
+                <div class="grid_column-2">
+                  <div class="home-product-item">
+                    <div class="home-product-item_img" style="background-image: url(https://statics.vinpearl.com/b%C3%A1n%20%C4%91%E1%BA%A3o%20s%C6%A1n%20tr%C3%A0_1661247495.jpg);"></div>
+                    <h4 class="home-product-item_name">
+                      Tour Đà Nẵng 3N2Đ x.000.000-x.200.000đ
+                      Contact: 0123456789
+                    </h4>
+                  </div>  
+                </div>
+                <div class="grid_column-2">
+                  <div class="home-product-item">
+                    <div class="home-product-item_img" style="background-image: url(https://statics.vinpearl.com/dao-phu-quoc_1661246610.jpg);"></div>
+                    <h4 class="home-product-item_name">
+                      Tour Phú Quốc 3N2Đ x.000.000-x.200.000đ
+                      Contact: 0123456789
+                    </h4>
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // JavaScript to load the navbar
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+</body>
+<footer>
+  <div class="dong">
+    <div class="Box">
+      <div class="box1">
+        <ul>Thông tin liên hệ
+          <li class="thongtin">Công ty Fly High</li>
+          <li class="thongtin">Địa chỉ: 227, Nguyễn Văn Cừ, quận 5, TP.HCM</li>
+          <li class="thongtin">Email: flyhigh@gmail.com</li>
+        </ul>
+      </div>
+      <div class="box1">
+        <ul>Chính sách dịch vụ
+          <li class="thongtin"><a href="Qdsd.html">Quy định sử dụng</a></li>
+          <li class="thongtin"><a href="Csbm.html">Chính sách bảo mật</a></li>
+        </ul> 
+      </div>   
+      <div class="box1">
+        <ul>Hỗ trợ
+          <li class="thongtin">Phản hồi, góp ý: 0134789611</li>
+          <li class="thongtin">Tel:(028) 6969 1111</li>
+          <li class="thongtin">Fax:(028) 1234 7689</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="dong1">
+    © 2024 Fly High. All Rights Reserved. 
+  </div>
+</footer>
+</html>

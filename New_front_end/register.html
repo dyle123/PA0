@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="Image/fly.png" type="icon" />
+  <meta charset="UTF-8" />
+  <title>FlyHigh Review and Experiance</title>
+  <meta name="description" content="A basic HTML tutorial" />
+  <meta name="keywords" content="HTML,code,tags" />
+  <meta name="author" content="Dann Albright" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="register.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="navbar-container"></div>
+  <div class="top">
+    <div id="pic">
+      <h1>Fly High</h1>
+    </div>
+    <div class="language">
+      <i class="bx bx-globe"></i>
+      <select id="languageSelect" aria-label="Language Select">
+        <option value="en">English</option>
+        <option value="vi">Tiếng Việt</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <form action="">
+      <h1 data-en="SIGN UP" data-vi="ĐĂNG KÝ">SIGN UP</h1>
+      <div class="input-box">
+        <input type="Email" placeholder="Email" data-en="Email" data-vi="Email" required />
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+
+      <div class="input-box">
+        <input type="text" placeholder="Username" data-en="Username" data-vi="Tên đăng nhập" required />
+        <i class="bx bxs-user"></i>
+      </div>
+
+      <div class="input-box">
+        <input type="Password" placeholder="Password" data-en="Password" data-vi="Mật khẩu" required />
+        <i class="bx bxs-lock-alt"></i>
+      </div>
+
+      <button type="submit" class="btn" data-en="Sign up" data-vi="Đăng ký">Sign up</button>
+      <div class="register-link">
+        <p>
+          <span data-en="Have an account?" data-vi="Đã có tài khoản?"></span>
+          <a href="login.html" data-en="Login" data-vi="Đăng nhập">Login</a>
+        </p>
+      </div>
+    </form>
+  </div>
+  
+  <script src="login.js"></script>
+  <script>
+    // JavaScript to load the navbar
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading navbar:', error));
+  </script>
+</body>
+<footer>
+  <div class="dong">
+    <div class="Box">
+      <div class="box1">
+        <ul>Thông tin liên hệ
+          <li class="thongtin">Công ty Fly High</li>
+          <li class="thongtin">Địa chỉ: 123 ABC, Phường 69, Quận XYZ, TPHCM</li>
+          <li class="thongtin">Email: flyhigh@gmail.com</li>
+        </ul>
+      </div>
+      <div class="box1">
+        <ul>Chính sách dịch vụ
+          <li class="thongtin"><a href="Qdsd.html">Quy định sử dụng</a></li>
+          <li class="thongtin"><a href="Csbm.html">Chính sách bảo mật</a></li>
+        </ul> 
+      </div>   
+      <div class="box1">
+        <ul>Hỗ trợ
+          <li class="thongtin">Phản hồi, góp ý: 0134789611</li>
+          <li class="thongtin">Tel:(028) 6969 1111</li>
+          <li class="thongtin">Fax:(028) 1234 7689</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="dong1">
+    © 2024 Fly High. All Rights Reserved. 
+  </div>
+</footer>
+</html>
