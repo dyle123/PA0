@@ -7,7 +7,7 @@
     <div id="navbar-container"></div>
     <script>
         // JavaScript to load the navbar
-        fetch('navbar.html')
+        fetch('core/navbar.html')
           .then(response => response.text())
           .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
@@ -16,7 +16,7 @@
       </script>
     <title>Connection Error</title>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Optional if you have a global CSS file -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}"> <!-- Optional if you have a global CSS file -->
     <style>
         body {
             font-family: 'Mulish', sans-serif;

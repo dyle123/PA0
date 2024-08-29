@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Information Page</title>
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="{% static 'admin.css' %}">
 </head>
 
 <body>
     <div id="navbar-container"></div>
     <script>
         // JavaScript to load the navbar
-        fetch('navbar.html')
+        fetch('core/navbar.html')
           .then(response => response.text())
           .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
@@ -32,7 +32,7 @@
         <div class="review-posts">
             <h2>Review Posts</h2>
             <div class="post">
-                <img src="Image/banhtrang.jpg" alt="Sample Food" class="post-image">
+                <img src="{% static '/Image/banhtrang.jpg' %}" alt="Sample Food" class="post-image">
                 <div class="post-content">
                     <p class="post-title"><strong>Title:</strong> Bánh tráng nướng Đà Lạt - Món ăn ngon khó cưỡng nhất
                         định phải thử khi đến xứ sở sương mù</p>

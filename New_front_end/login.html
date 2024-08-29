@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <link
     rel="icon"
-    href="Image/fly.png"
+    href="{% static '/Image/fly.png' %}"
     type="icon"
   />
   <title>FlyHigh Review and Experiance</title>
@@ -12,7 +12,7 @@
   <meta name="keywords" content="HTML,code,tags" />
   <meta name="author" content="Dann Albright" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="{% static 'login.css' %}" />
   <link
     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     rel="stylesheet"
@@ -62,16 +62,16 @@
       <div class="register-link">
         <p>
           <span data-en="Don't have an account?" data-vi="Chưa có tài khoản?">Don't have an account?</span>
-          <a href="register.html" data-en="Register" data-vi="Đăng ký">Register</a>
+          <a href="{% static 'register.html' %}" data-en="Register" data-vi="Đăng ký">Register</a>
         </p>
       </div>
     </form>
   </div>
   
-  <script src="login.js"></script>
+  <script src="{% static 'login.js' %}"></script>
   <script>
     // JavaScript to load the navbar
-    fetch('navbar.html')
+    fetch('core/navbar.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('navbar-container').innerHTML = data;
@@ -91,8 +91,8 @@
       </div>
       <div class="box1">
         <ul>Chính sách dịch vụ
-          <li class="thongtin"><a href="Qdsd.html">Quy định sử dụng</a></li>
-          <li class="thongtin"><a href="Csbm.html">Chính sách bảo mật</a></li>
+          <li class="thongtin"><a href="{% static 'Qdsd.html' %}">Quy định sử dụng</a></li>
+          <li class="thongtin"><a href="{% static 'Csbm.html' %}">Chính sách bảo mật</a></li>
         </ul> 
       </div>   
       <div class="box1">

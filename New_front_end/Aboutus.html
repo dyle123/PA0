@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Fly High</title>
-    <link rel="stylesheet" href="Ads.css">
+    <link rel="stylesheet" href="{% static 'Ads.html' %}">
 </head>
 <body>
     <div id="navbar-container"></div>
@@ -51,8 +51,8 @@
                 </div>
                 <div class="box1">
                     <ul>Chính sách dịch vụ
-                        <li class="thongtin"><a href="Qdsd.html">Quy định sử dụng</a></li>
-                        <li class="thongtin"><a href="Csbm.html">Chính sách bảo mật</a></li>
+                        <li class="thongtin"><a href="{% static 'Qdsd.html' %}">Quy định sử dụng</a></li>
+                        <li class="thongtin"><a href="{% static 'Csbm.html' %}">Chính sách bảo mật</a></li>
                     </ul> 
                 </div>   
                 <div class="box1">
@@ -70,7 +70,7 @@
     </footer>
     <script>
         // JavaScript to load the navbar
-        fetch('navbar.html')
+        fetch('core/navbar.html')
           .then(response => response.text())
           .then(data => {
             document.getElementById('navbar-container').innerHTML = data;

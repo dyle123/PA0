@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Page</title>
+    <link rel="stylesheet" href="core/user.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar-container"></div>
+        <script>
+            // JavaScript to load the navbar
+            fetch('core/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+        </script>
+
+        <!-- General Information Section -->
+        <div class="general-info">
+            <h2>Homepage >> User Information</h2>
+            <h2>General Information</h2>
+            <p><strong>Username:</strong> VytotheTopp</p>
+            <p><strong>Account type:</strong> Member</p>
+        </div>
+
+        <!-- Your Articles Section -->
+        <div class="your-articles">
+            <h2>Your articles:</h2>
+            <div class="article">
+                <img src="Image/comhenhue.jpg" alt="Quần thể di tich Cố đô Huế">
+                <div class="article-details">
+                    <p class="article-title"><strong>Quần thế di tích Cố đô Huế - Di sản văn hóa thế giới đầu tiên của
+                            Việt Nam</strong></p>
+                    <div class="likes-count">
+                        <span>30 likes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <img src="Image/codohue.jpg" alt="Vị vua Huế nhớ thương thức cơm hến">
+                <div class="article-details">
+                    <p class="article-title"><strong>Vi vu Huế nhớ thương thức cơm hến - món ăn phong vị cung
+                            đình</strong></p>
+                    <div class="likes-count">
+                        <span>29 likes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <img src="Image/mexunghue.jpg" alt="Mè xửng Huế">
+                <div class="article-details">
+                    <p class="article-title"><strong>Mè xửng Huế - đặc sản làm quà nổi tiếng được khách thập phương yêu
+                            thích</strong></p>
+                    <div class="likes-count">
+                        <span>20 likes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

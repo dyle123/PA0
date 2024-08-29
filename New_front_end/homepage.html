@@ -6,8 +6,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="icon" href="Image/fly.png" type="icon" />
+    <link rel="stylesheet" href="{% static 'homepage.css' %}">
+    <link rel="icon" href="{% static '/Image/fly.png' %}" type="icon" />
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <title>FlyHigh Review and Experiance</title>
@@ -33,13 +33,13 @@
   <div class="container">
     <!-- Left Sidebar -->
     <div class="left-sidebar">
-      <img src="Image/first_page.png" alt="Description of image" style="width:100%;">
-      <a href="write.html" class="post-button">Wanna share? Start writing now!</a>
+      <img src="{% static '/Image/first_page.png' %}" alt="Description of image" style="width:100%;">
+      <a href="{% static 'write.html' %}" class="post-button">Wanna share? Start writing now!</a>
       <div class="MOST-LIKED-ON-FLYHIGH">
         <div id="box-container" class="MOST-LIKED-ON-FLYHIGH"></div>
     </div>
-    <script src="hot.js"></script>
-      <img src="Image/banner_dalat.jpg" alt="Banner" style="width:100%;">
+    <script src="{% static 'hot.js' %}"></script>
+      <img src="{% static '/Image/banner_dalat.jpg' %}" alt="Banner" style="width:100%;">
       <div id="article-section">
         <h2>Articles</h2>
         <div id="article-container">
@@ -47,12 +47,12 @@
         </div>
     </div>
 
-    <script src="article.js"></script>
+    <script src="{% static 'article.js' %}"></script>
       
       <div class="Index">
-        <a href="your-target-page.html" class="small-box">1</a>
-        <a href="your-target-page.html" class="small-box">2</a>
-        <a href="your-target-page.html" class="small-box">3</a>
+        <a href="{% static 'your-target-page.html' %}" class="small-box">1</a>
+        <a href="{% static 'your-target-page.html' %}" class="small-box">2</a>
+        <a href="{% static 'your-target-page.html' %}" class="small-box">3</a>
       </div>
     </div>
   
@@ -124,7 +124,7 @@
   </div>
   <script>
     // JavaScript to load the navbar
-    fetch('navbar.html')
+    fetch('core/navbar.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('navbar-container').innerHTML = data;
@@ -144,8 +144,8 @@
       </div>
       <div class="box1">
         <ul>Chính sách dịch vụ
-          <li class="thongtin"><a href="Qdsd.html">Quy định sử dụng</a></li>
-          <li class="thongtin"><a href="Csbm.html">Chính sách bảo mật</a></li>
+          <li class="thongtin"><a href="{% static 'Qdsd.html' %}">Quy định sử dụng</a></li>
+          <li class="thongtin"><a href="{% static 'Csbm.html' %}">Chính sách bảo mật</a></li>
         </ul> 
       </div>   
       <div class="box1">

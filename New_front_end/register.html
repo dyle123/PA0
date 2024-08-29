@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="Image/fly.png" type="icon" />
+  <link rel="icon" href="{% static '/Image/fly.png' %}" type="icon" />
   <meta charset="UTF-8" />
   <title>FlyHigh Review and Experiance</title>
   <meta name="description" content="A basic HTML tutorial" />
   <meta name="keywords" content="HTML,code,tags" />
   <meta name="author" content="Dann Albright" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="register.css" />
+  <link rel="stylesheet" href="{% static 'register.css' %}" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,16 +51,16 @@
       <div class="register-link">
         <p>
           <span data-en="Have an account?" data-vi="Đã có tài khoản?"></span>
-          <a href="login.html" data-en="Login" data-vi="Đăng nhập">Login</a>
+          <a href="{% static 'login.html' %}" data-en="Login" data-vi="Đăng nhập">Login</a>
         </p>
       </div>
     </form>
   </div>
   
-  <script src="login.js"></script>
+  <script src="{% static 'login.js' %}"></script>
   <script>
     // JavaScript to load the navbar
-    fetch('navbar.html')
+    fetch('core/navbar.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('navbar-container').innerHTML = data;
@@ -80,8 +80,8 @@
       </div>
       <div class="box1">
         <ul>Chính sách dịch vụ
-          <li class="thongtin"><a href="Qdsd.html">Quy định sử dụng</a></li>
-          <li class="thongtin"><a href="Csbm.html">Chính sách bảo mật</a></li>
+          <li class="thongtin"><a href="{% static 'Qdsd.html' %}">Quy định sử dụng</a></li>
+          <li class="thongtin"><a href="{% static 'Csbm.html' %}">Chính sách bảo mật</a></li>
         </ul> 
       </div>   
       <div class="box1">

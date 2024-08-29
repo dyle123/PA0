@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlyHigh Travel</title>
-    <link rel="stylesheet" href="Ads.css">
+    <link rel="stylesheet" href="{% static 'Ads.css' %}">
 </head>
 <body>
     <div id="navbar-container"></div>
@@ -15,7 +15,7 @@
             <p>These are some traveling packages that we advertise and highly recommend for you</p>
             
             <div class="suggestion">
-                <img src="Image/nha-trang.png" alt="Tour to Da Lat">
+                <img src="{% static '/Image/nha-trang.png' %}" alt="Tour to Da Lat">
                 <div class="caption">
                     <h2>Tour to Nha Trang - Tropical Paradise of Viet Nam</h2>
                     <p>Price only from 2.500.000VND for 4 days </p>
@@ -23,7 +23,7 @@
             </div>
     
             <div class="suggestion">
-                <img src="Image/ha-noi.png" alt="Tour to Da Lat">
+                <img src="{% static '/Image/ha-noi.png' %}" alt="Tour to Da Lat">
                 <div class="caption">
                     <h2>Tour to Ha Noi - The Capital, the Heart of Vietnam</h2>
                     <p>Price only from 3.000.000VND for 4 days</p>
@@ -31,7 +31,7 @@
             </div>
     
             <div class="suggestion">
-                <img src="Image/cao-bang.png" alt="Tour to Da Lat">
+                <img src="{% static '/Image/cao-bang.png' %}" alt="Tour to Da Lat">
                 <div class="caption">
                     <h2>Tour to Cao Bang - The Autumn Paradise of Vietnam</h2>
                     <p>Price only from 3.200.000VND for 4 days</p>
@@ -39,7 +39,7 @@
             </div>
 
             <div class="suggestion">
-                <img src="Image/phu-quy.png" alt="Tour to Da Lat">
+                <img src="{% static '/Image/phu-quy.png' %}" alt="Tour to Da Lat">
                 <div class="caption">
                     <h2>Tour to Phu Quy - Where the Essence of Sea and Land Converges</h2>
                     <p>Price only from 3.500.000VND for 4 days</p>
@@ -47,7 +47,7 @@
             </div>
 
             <div class="suggestion">
-                <img src="Image/da-lat.png" alt="Tour to Da Lat">
+                <img src="{% static '/Image/da-lat.png' %}" alt="Tour to Da Lat">
                 <div class="caption">
                     <h2>Tour to Da Lat city - one of the most beautiful cities in Vietnam</h2>
                     <p>Price only from 4.000.000VND for 4 days</p>
@@ -67,8 +67,8 @@
                 </div>
                 <div class="box1">
                     <ul>Chính sách dịch vụ
-                        <li class="thongtin"><a href="Qdsd.html">Quy định sử dụng</a></li>
-                        <li class="thongtin"><a href="Csbm.html">Chính sách bảo mật</a></li>
+                        <li class="thongtin"><a href="{% static 'Qdsd.html' %}">Quy định sử dụng</a></li>
+                        <li class="thongtin"><a href="{% static 'Csbm.html' %}">Chính sách bảo mật</a></li>
                     </ul> 
                 </div>   
                 <div class="box1">
@@ -86,7 +86,7 @@
     </footer>
     <script>
         // JavaScript to load the navbar
-        fetch('navbar.html')
+        fetch('core/navbar.html')
           .then(response => response.text())
           .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
